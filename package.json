@@ -1,0 +1,72 @@
+{
+  "name": "20k-dana-na-zemlji",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.11",
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/pickers": "^3.2.7",
+    "date-fns": "^2.0.0-beta.5",
+    "electron-is-dev": "^1.1.0",
+    "moment": "^2.24.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn build",
+    "electron-pack": "electron-builder -mw"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.13",
+    "@rescripts/rescript-env": "^0.0.11",
+    "concurrently": "^5.0.0",
+    "electron": "^7.0.1",
+    "electron-builder": "^22.1.0",
+    "typescript": "^3.6.4",
+    "wait-on": "^3.3.0"
+  },
+  "author": {
+    "name": "Ivan Nikolic",
+    "email": "ivan@ivan-nikolic.com",
+    "url": "http://my-time-on-earth.com"
+  },
+  "build": {
+    "appId": "com.my-time-on-earth.mytimeonearth",
+    "productName": "My Time On Earth",
+    "copyright": "Copyright © 2019 ${author}",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}

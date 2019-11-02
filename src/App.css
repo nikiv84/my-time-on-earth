@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  overflow-y: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.app-main {
+  background-color: #211a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-main h1 .subtitle a {
+  display: block;
+  color: white;
+  font-size: 2rem;
+}
+
+.app-main h4 {
+  margin-top: 2rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+}
+
+.bg-img {
+  flex: 4;
+  display: flex;
+  align-self: stretch;
+  max-height: 100vh;
+  border-left: 10px solid #423030;
+}
+
+.bg-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.date-container {
+  padding: 3rem;
+  flex: 5;
+}
+
+.heading-main.MuiTypography-h1 {
+  color: #c41d22;
+  font-weight: 700;
+}
+
+.days-on-earth {
+  color: #c41d22;
+  border-bottom: 2px solid #c41d22;
+}
+
+.MuiPaper-root .MuiPickersToolbar-toolbar,
+.MuiPaper-root .MuiPickersDay-daySelected {
+  background-color: #c41d22 !important;
+}
+
+.MuiPaper-root .MuiPickersToolbarText-toolbarTxt {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.MuiPaper-root .MuiButton-textPrimary {
+  color: #c41d22 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+}
