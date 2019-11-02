@@ -1,5 +1,5 @@
 {
-    "name": "20k-dana-na-zemlji",
+    "name": "my-time-on-earth",
     "version": "0.1.0",
     "private": true,
     "homepage": "./",
@@ -24,7 +24,7 @@
         "electron-dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
         "postinstall": "electron-builder install-app-deps",
         "preelectron-pack": "yarn build",
-        "electron-pack": "electron-builder -w"
+        "electron-pack": "electron-builder -m"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -51,8 +51,8 @@
         "wait-on": "^3.3.0"
     },
     "author": {
-        "name": "Ivan Nikolic",
-        "email": "ivan@ivan-nikolic.com",
+        "name": "My Time On Earth | Vuk Vidor",
+        "email": "isidorapmar@gmail.com",
         "url": "http://my-time-on-earth.com"
     },
     "build": {
