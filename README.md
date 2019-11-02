@@ -1,5 +1,5 @@
 # My Time on Earth
-![No more Tabs](/src/assets/icon.png)
+![No more Tabs](/assets/icon.png)
 
 A React app for the exibition: Vuk Vidor - 20.000 Days on Earth
 
